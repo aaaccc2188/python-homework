@@ -42,3 +42,22 @@ print(f"Total: ${total_profit_loss}")
 print(f"Average Change: ${round(average_change,2)}")  
 print(f"Greatest Increase in Profits: {max_change_key} (${max_change})")
 print(f"Greatest Decrease in Profits: {min_change_key} (${min_change})")
+
+# Set output file name
+output_path = 'output.txt'
+
+# Open the output path as a file object
+with open(output_path, 'w') as file:  
+    file.write("Financial Analysis")
+    file.write("\n")
+    file.write("------------------")
+    file.write("\n")
+    file.write(f"Total Months: {total_months}")
+    file.write("\n")
+    file.write(f"Total: ${total_profit_loss}")
+    file.write("\n")
+    file.write(f"Average Change: ${round(average_change,2)}")
+    file.write("\n")
+    file.write(f"Greatest Increase in Profits: {max_change_key} (${max_change})")
+    file.write("\n")
+    file.write(f"Greatest Decrease in Profits: {min_change_key} (${min_change})")
